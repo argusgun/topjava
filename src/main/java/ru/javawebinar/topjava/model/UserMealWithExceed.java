@@ -33,4 +33,9 @@ public class UserMealWithExceed {
     public boolean isExceed() {
         return exceed;
     }
+
+    @Override
+    public String toString() {
+        return ""+getDateTime().toString()+" "+getDescription()+" "+getCalories()+" "+isExceed();
+    }
 }
